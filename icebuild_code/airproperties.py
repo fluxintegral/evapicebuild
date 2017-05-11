@@ -35,7 +35,7 @@ def vapourmass(temp,rh):
     R.J. Love, I. Merts, A.R. East, J.F. Wang, and A.H.J Paterson, Massey
     University, Palmerston North, New Zealand,(2013), PP.6.3 
     '''
-   
+    
     if temp <= 0:
         pw = np.exp(28.7775 -(6071.67/(temp+271.11)))
 #        print('t < 0 , %0.5f') %(pw)

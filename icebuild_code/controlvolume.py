@@ -25,10 +25,9 @@ def Tii(ho,Af,mdot,cpa,Tfs,Ti, n = 1):
 ##############################################################################
 ##############################################################################
     
-def wii(ho,Af,mdot,cpa,Tfs,Ti, wi, wsat, Le , n = 1):
+def wii(ho,Af,mdot,cpa,Tfs,Ti, wi, wsat, Le , n = 1.):
     
-    
-    mm = -n*ho*Af/(mdot*cpa*Le**(2/3.))
+    mm = (-n*ho*Af)/(mdot*cpa*Le**(2./3.))   
     wii = wsat - (wsat-wi)*np.exp(mm)  # wsat is humidity ratio at Tfs
     return(wii)    
 
